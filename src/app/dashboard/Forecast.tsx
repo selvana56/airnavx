@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import { CloudFog } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
@@ -21,8 +22,19 @@ const Forecast = () => {
         
         <>
         <div key={index} className='flex items-center justify-between py-5'>
+             <TolTip content='Time'>
+
             <span>19:23</span>
+             </TolTip>
+            
+            <TolTip content='Temperature'>
+
             <span>33.2&deg;C</span>
+            </TolTip>
+            
+            <TolTip content='Humidity'>
+                
+                
             <span className='flex items-center gap-1'>
                 <Image src={'/humidity.svg'} alt='humidity' width={14} height={14}/>
                 <span>
@@ -31,14 +43,21 @@ const Forecast = () => {
                 <span>%</span>
                 </span>
             </span>
+            </TolTip>
+            <TolTip content='Wind status'>
+
             <span className='flex items-center gap-1'>
               <CloudFog className='text-primary' size={20}/>
                 36.5<sub>km/h</sub>
             </span>
+            </TolTip>
+            <TolTip content='Rain'>
+
             <span className='flex items-center gap-1 mr-10'>
                 <Image src={'/rain-drobs.svg'} alt='humidity' width={14} height={14}/>
                 NO
             </span>
+            </TolTip>
         </div>
         <Separator />
         </>
@@ -48,3 +67,22 @@ const Forecast = () => {
 }
 
 export default Forecast
+
+
+interface TolTipProps {
+    children:React.ReactNode,
+    content:string
+}
+
+const TolTip = ({children, content}:TolTipProps) => {
+  return (
+    <Tooltip>
+      <TooltipTrigger asChild>
+        {children}
+      </TooltipTrigger>
+      <TooltipContent>
+        {content}
+      </TooltipContent>
+    </Tooltip>
+  )
+}
