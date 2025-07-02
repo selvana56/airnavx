@@ -11,6 +11,8 @@ import Link from "next/link"
 
 const Hero = () => {
     const ArrowRightMotion = motion(ArrowRight);
+
+  
   return (
    <section 
     className="bg-[url('/earth-seen.png')] bg-cover bg-center  min-h-screen flex items-center justify-center"
@@ -28,7 +30,8 @@ const Hero = () => {
         <p className="text-sm sm:text-lg mb-6 max-w-3xl text-muted-foreground mx-auto">
          The development of virtual ATC towers marks a significant step in digitizing airport operations by reducing costs and improving efficiency. These towers utilize AI to monitor ground aircraft, prevent collisions, and enhance situational awareness. As air traffic becomes more complex, integrating AI and human-centered systems into ATM is vital for ensuring a safer and more efficient future in aviation.
         </p>
-       <Button className={cn(`px-16`)} asChild>
+       <Button className={cn(`px-16`)} 
+       asChild>
         <Link href={'/dashboard'}>
         
         Go to Dashboard
