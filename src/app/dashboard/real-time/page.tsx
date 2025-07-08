@@ -22,7 +22,7 @@ const RealTime = () => {
     >
       {data &&
       <>
-      {imageOrVideo === 'image'? 
+      
         <div className='c-flex gap-4 flex-col'>
 
 
@@ -41,7 +41,7 @@ const RealTime = () => {
 
       </div> 
 
-:<div className='c-flex flex-col gap-4'>
+<div className='c-flex flex-col gap-4'>
       
         <h2
         className='text-2xl font-bold'
@@ -53,7 +53,7 @@ const RealTime = () => {
        <Button type='button' size={'icon'}  variant={'outline'} className={cn('text-primary font-medium px-30')}>Try more <ArrowRight/></Button>
      
       </div>
-    }
+
       </>
 }
     </UploadInput>
