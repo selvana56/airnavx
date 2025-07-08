@@ -9,7 +9,7 @@ const VideoTrial = () => {
     <section className= 'py-10 md:py-20'>
         <div className='w-11/12 max-w-6xl mx-auto flex items-center flex-wrap justify-between gap-10'>
         {/* <video src={'/pilot.png'}/> */}
-        <Image src={'/youtub.png'} alt='video' width={500} height={600} />
+        <video controls={true} src={'/youtub.png'}  width={600} height={700} />
         <div className='flex-1'>
             <h3 className='text-xl sm:text-4xl font-bold pb-5'>{title}</h3>
             <p className='text-sm sm:text-lg text-muted-foreground'>{desc}</p>
