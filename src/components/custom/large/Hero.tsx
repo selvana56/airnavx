@@ -15,7 +15,7 @@ const Hero = () => {
   
   return (
    <section 
-    className="bg-[url('/earth-seen.png')] bg-cover bg-center  min-h-screen flex items-center justify-center"
+    className="bg-[url('/hero/earth-seen.png')] bg-cover bg-center  min-h-screen flex items-center justify-center"
    >
      <div className="text-center px-4">
         <h1 className=" text-2xl md:text-[64px] max-w-3xl  flex flex-col items-center  justify-start mx-auto font-bold mb-4">
@@ -28,7 +28,7 @@ const Hero = () => {
             </span>
         </h1>
         <p className="text-sm sm:text-lg mb-6 max-w-3xl text-muted-foreground mx-auto">
-         The development of virtual ATC towers marks a significant step in digitizing airport operations by reducing costs and improving efficiency. These towers utilize AI to monitor ground aircraft, prevent collisions, and enhance situational awareness. As air traffic becomes more complex, integrating AI and human-centered systems into ATM is vital for ensuring a safer and more efficient future in aviation.
+         Navigate the future with real-time AI insights brought to life through immersive Mixed Reality. From obstacle detection to live weather overlays, experience faster, safer, and more intuitive navigation like never before.
         </p>
        <Button className={cn(`px-16`)} 
        asChild>

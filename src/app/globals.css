@@ -4,6 +4,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+.c-flex {
+  @apply flex items-center justify-center
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -115,7 +120,6 @@ html {
   --sidebar-ring: oklch(0.541 0.281 293.009);
 }
 
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -124,7 +128,6 @@ html {
     @apply bg-background text-foreground;
   }
 }
-
 
  @keyframes wiggle {
     0%,

@@ -51,6 +51,13 @@ const Forecast = () => {
                 36.5<sub>km/h</sub>
             </span>
             </TolTip>
+            <TolTip content='Direction'>
+
+            <Button className='font-semibold'>
+              N
+            </Button>
+              
+            </TolTip>
             <TolTip content='Rain'>
 
             <span className='flex items-center gap-1 mr-10'>

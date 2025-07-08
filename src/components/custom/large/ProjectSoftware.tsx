@@ -5,14 +5,14 @@ import CustomTitle from "../atoms/CustomTitle";
 import Image from "next/image";
 
 const TITLE = "Project Softwares";
-const DESC = ` The project is divided into three main sections: artificial intelligence, mixed reality, 
-and their application in the navigation system.`;
+const DESC = `We have utilized these fundamental software tools, along with several others.`;
 const cards = [
-  "/colab.jpg",
-  "/unity.jpg",
-  "/blender.png",
-  "/figma.png",
-  "/next.svg",
+  "/project-software/colab.jpg",
+  "/project-software/unity.jpg",
+  "/project-software/blender.png",
+  "/project-software/figma.png",
+  "/project-software/next.svg",
+  "/project-software/react.svg",
   
 ];
 const ProjectSoftware = () => {
