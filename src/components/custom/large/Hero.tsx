@@ -15,7 +15,7 @@ const Hero = () => {
   
   return (
    <section 
-    className="bg-[url('/hero/earth-seen.png')] bg-cover bg-center  min-h-screen flex items-center justify-center"
+    className="bg-[url('/earth-seen.png')] bg-cover bg-center  min-h-screen flex items-center justify-center"
    >
      <div className="text-center px-4">
         <h1 className=" text-2xl md:text-[64px] max-w-3xl  flex flex-col items-center  justify-start mx-auto font-bold mb-4">

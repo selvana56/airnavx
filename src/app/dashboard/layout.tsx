@@ -2,14 +2,22 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { AppSidebar } from "./AppSidebar"
 import { Card } from "@/components/ui/card"
 import Header from "@/components/custom/atoms/Header"
+import TanStak from "./tanStack"
+
+
+
 
 export default function DashboardLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+
    return (
     <>
+    <TanStak>
+      
+
     <SidebarProvider className="hidden xl:flex">
       <AppSidebar />
       <main className="w-full">
@@ -30,6 +38,8 @@ export default function DashboardLayout({
         </Card>
       </div>
     </section>
+
+    </TanStak>
     </>
   )
 

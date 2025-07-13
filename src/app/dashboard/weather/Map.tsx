@@ -14,7 +14,7 @@ const Map = ({map,lat,long}:MapProps) => {
        {map&&  <div 
        className='block h-full w-full rounded-2xl'
        dangerouslySetInnerHTML={{__html: map}} />}
-       <Image src={'/map.png'} width={300} height={400} alt='map'/>
+  
         <Button className='w-full text-lg '>{lat}33.323, {long}29.345</Button>
     </div>
   )
