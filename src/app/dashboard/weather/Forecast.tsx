@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
-import { Forecast } from '@/lib/types'
+import { Forecast as ForecastType } from '@/lib/types'
 import { CloudFog } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
